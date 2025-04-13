@@ -74,17 +74,14 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 
 }
-init();
-
-
-    
+init();   
 let tl = gsap.timeline({
     scrollTrigger:{
         trigger:".page1 h1",
         scroller:".main",
         // markers:true,
         start:"top 20%",
-        scrub:3,
+        scrub:5,
       }
 })
 tl.to(".page1 h1",{
@@ -112,7 +109,7 @@ t2.to(".page1",{
 },"w")
 t2.to(".page2",{
     backgroundColor:"white",
-    color:"black",
+    color:"#180303",
 },"w")
 t2.to(".page3",{
     backgroundColor:"white",
@@ -140,9 +137,6 @@ t3.to(".page3",{
     backgroundColor:"black",
     color:"white",
 },)
-
-
-
 var boxes = document.querySelectorAll(".box");
 boxes.forEach(function(e){
    e.addEventListener("mouseenter",function(){
